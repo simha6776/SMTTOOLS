@@ -30,9 +30,9 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/smttools")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001802412953'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6784769133').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002177115516').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002483919278'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1895902057').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002139786268 -1002099011652').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -40,7 +40,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
 REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', True)) # Set True Or False
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', True)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
-auth_channel = environ.get('AUTH_CHANNEL', '-1001886855686') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002286374748') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 reqst_channel = environ.get('REQST_CHANNEL_ID', '')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
@@ -51,9 +51,9 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://smttools:c04DqReNskhfMMHv@cluster0.cdq9w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://narasimhamurthyht0:3HHc8yNNAYa4v0TM@cluster0.eu0jx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SMTTOOLS')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Cluster0')
 
 # Premium And Referal Settings
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
@@ -71,10 +71,10 @@ CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "mongodb+srv://botmaking8
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'supreethbot05') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/smttools')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/smttools')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/smttools')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'supreeth1t8') # Support Chat Link Without https:// or @
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+JiVi4by2Aag3MzE1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+kOcXJRcETpVjMWVl')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+kOcXJRcETpVjMWVl')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '@t.me/+sLdUkZ4lhlU2NWNl') # Support Chat Link Without https:// or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
